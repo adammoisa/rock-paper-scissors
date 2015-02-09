@@ -1,5 +1,6 @@
 function Validate (word) {
-	if (word == "rock" || word == "paper" || word == "scissor" || word == "scissors") {
+	var lowerCase = word.toLowerCase();
+	if (lowerCase == "rock" || lowerCase == "paper" || lowerCase == "scissor" || lowerCase == "scissors") {
 		return true;
 	} else {
 		return false;
@@ -142,7 +143,7 @@ function PlayGame () {
 	ClearPictures();
 	var validateResult = Validate(uc);
 	var uc = ConvertScissors(uc);
-	if (validateResult == true) {
+	if (validateResult) {
 		compChoice = CreateComputerChoice(cc);
 		ShowPicture();
 		var result = Compare(uc, compChoice);
