@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="wrap">
+		<div id="counter">
+			<p class="left">You: <span id="youCount">0</span></p>
+			<p class="center">Computer: <span id="computerCount">0</span></p>
+			<p class="right">Ties: <span id="tieCount">0</span></p>
+		</div>
+
+		<div id="everything">
+			<input type="text" id="uc" placeholder="enter rock paper or scissor" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" autofocus></input>
+			<button id="button" onclick="PlayGame()">Press to play!</button>
+			<h1 id="resultH1" class="test">Results will be shown here:</h1>
+
+			<section id="main">
+				<div id="youSection">
+					<img class="img" id="youRock" src="img/rock.png">
+					<img class="img" id="youPaper" src="img/paper.png">
+					<img class="img" id="youScissor" src="img/scissor.png">
+					<h2>You: <span id="youChoice"></span></h2>
+				</div>
+				<div id="computerSection">
+					<img class="img" id="compRock" src="img/rock.png">
+					<img class="img" id="compPaper" src="img/paper.png">
+					<img class="img" id="compScissor" src="img/scissor.png">
+					<h2>Computer: <span id="computerChoice"></span></h2>
+				</div>
+				<div id="results">
+					<br>
+					<h1 id="resultHTML"></h1>
+					<br>
+					<h2 id="playAgain"></h2>
+				</div>
+			</section>
+		</div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>
