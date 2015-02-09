@@ -1,0 +1,91 @@
+body {
+	font-family: 'Titillium Web', helvetica, verdana, sans-serif;
+}
+
+div#wrap {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#counter p {
+	font-size: 22px;
+	margin-bottom: 50px;
+	margin-left: 95px;
+}
+
+#counter p.left {
+	float: left;
+	color: #63bd65;
+}
+
+#counter p.center {
+	float: left;
+	color: #f16058;
+}
+
+#counter p.right {
+	float: left;
+}
+
+div#everything {
+	clear: left;
+	clear: right;
+}
+
+h1#resultH1 {
+	margin-top: 40px;
+}
+
+input{
+	width: 200px;
+	border: 1px #000 solid;
+	border-radius: 4px;
+	padding: 10px 20px;
+	color: #000;
+	font-size: 12px;
+}
+
+button {
+	font-size: 12px;
+	width: 150px;
+	border: 1px #000 solid;
+	background-color: #fff;
+	color: #000;
+	border-radius: 4px;
+	padding: 10px 20px;
+}
+
+button:hover {
+	color: #fff;
+	background-color: #000;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+img {
+	display: none;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+
+section#main {
+	margin-top: 40px;
+}
+
+#youSection{
+	float: left;
+	margin-left: 40px;
+}
+
+#computerSection {
+	margin-right: 40px;
+	float: right;
+
+}
+
+#results {
+	clear: left;
+	clear: right;
+}
